@@ -599,7 +599,7 @@ export const NewMessage = () => {
 
   const onBtnLinkChanged = (event: any) => {
     if (
-      validator.isURL(event.target.value, { require_protocol: true, protocols: ['https','http'] }) ||
+      validator.isURL(event.target.value, { require_protocol: true, protocols: ['https', 'http'] }) ||
       event.target.value === ''
     ) {
       setBtnLinkErrorMessage('');
